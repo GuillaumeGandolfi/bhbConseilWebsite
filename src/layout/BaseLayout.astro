@@ -1,0 +1,28 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nom de l'entreprise - Votre partenaire en conseil financier</title>
+
+    <meta name="description" content="Nom de l'entreprise offre des services de conseil et de placement financier pour vous accompagner dans la gestion de votre patrimoine.">
+
+    <link rel="icon" href="/src/assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+  </head>
+  <body>
+    <Header />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
