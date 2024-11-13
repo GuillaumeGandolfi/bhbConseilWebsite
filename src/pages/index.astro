@@ -1,10 +1,20 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro';
+
+import '../styles/homepage/hero.css';
 ---
 
 <BaseLayout>
-  <section>
-    <h1>Bienvenue sur notre site</h1>
-    <p>Page d'accueil en construction. Le contenu viendra bientôt.</p>
+
+  <section class="hero-section" aria-labelledby="hero-title" role="region">
+    <div class="hero-content">
+      <h1 id="hero-title">BHB Conseil, votre partenaire en stratégie financière</h1>
+      <p>Un accompagnement complet en immobilier, prévoyance, retraite et bien plus</p>
+      <div class="hero-buttons">
+        <a href="/services" class="hero-button" aria-label="Découvrir nos services financiers">Découvrir nos services</a>
+        <a href="/contact" class="hero-button secondary" aria-label="Prendre rendez-vous avec un conseiller">Prendre rendez-vous</a>
+      </div>
+    </div>
   </section>
+
 </BaseLayout>

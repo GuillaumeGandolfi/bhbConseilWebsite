@@ -1,14 +1,12 @@
-/* Styles de base du header */
 header {
   background-color: #ffffff;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
-  top: 0; /* Place le header en haut de la page */
-  z-index: 10; /* Assure que le header reste au-dessus du contenu */
+  top: 0;
+  z-index: 10;
 }
 
-/* Conteneur */
 .container {
   display: flex;
   align-items: center;
@@ -19,20 +17,17 @@ header {
   width: 80%;
 }
 
-/* Logo */
 .logo img {
   display: block;
   width: 100px;
   height: auto;
 }
 
-/* Navigation */
 nav {
   display: flex;
   align-items: center;
 }
 
-/* Styles de navigation */
 nav ul {
   display: flex;
   gap: 2rem;
@@ -41,7 +36,6 @@ nav ul {
   margin: 0;
 }
 
-/* Liens de navigation */
 nav ul li a {
   color: #000000;
   text-decoration: none;
@@ -69,7 +63,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Bouton de contact */
 .contact-button {
   padding: 0.5rem 1rem;
   background-color: #012f3c;
@@ -85,7 +78,6 @@ nav ul li a:hover::after {
   background-color: #012f3c;
 }
 
-/* Responsive: Burger menu pour les petits écrans */
 .burger-menu {
   display: none;
   font-size: 1.5rem;
