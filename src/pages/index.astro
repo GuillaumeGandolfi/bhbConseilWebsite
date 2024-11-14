@@ -2,6 +2,7 @@
 import BaseLayout from '../layout/BaseLayout.astro';
 
 import '../styles/homepage/hero.css';
+import '../styles/homepage/services.css';
 ---
 
 <BaseLayout>
@@ -14,6 +15,94 @@ import '../styles/homepage/hero.css';
         <a href="/services" class="hero-button" aria-label="Découvrir nos services financiers">Découvrir nos services</a>
         <a href="/contact" class="hero-button secondary" aria-label="Prendre rendez-vous avec un conseiller">Prendre rendez-vous</a>
       </div>
+    </div>
+  </section>
+
+  <section class="services-section" aria-labelledby="services-title" role="region">
+    <h2 id="services-title">Nos Services</h2>
+    <div class="services-grid">
+      <div class="first-row">
+        
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/strategy.webp" alt="Stratégie financière" loading="lazy" />
+          </div>
+          <hr>
+          <h3>Stratégie</h3>
+          <p>Accompagnement personnalisé pour élaborer une stratégie patrimoniale adaptée à vos objectifs financiers.</p>
+        </div>
+  
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/building.webp" alt="Investissement immobilier" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Immobilier</h3>
+          <p>Solutions d'investissement et de gestion immobilière pour diversifier et optimiser votre patrimoine.</p>
+        </div>
+  
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/money-bag.webp" alt="Solutions de financement" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Financement</h3>
+          <p>Des solutions adaptées pour financer vos projets, que ce soit pour des biens immobiliers ou des besoins professionnels.</p>
+        </div>
+      </div>
+
+      <div class="second-row">
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/profit.webp" alt="Investissement non coté" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Non-côté</h3>
+          <p>Opportunités d’investissement dans des entreprises non cotées en bourse, pour diversifier et valoriser votre portefeuille.</p>
+        </div>
+  
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/security.webp" alt="Solutions de prévoyance" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Prévoyance</h3>
+          <p>Des solutions pour protéger vos proches et sécuriser votre avenir financier en cas d’imprévus.</p>
+        </div>
+      </div>
+
+      <div class="third-row">
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/retirement.webp" alt="Préparation à la retraite" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Retraite</h3>
+          <p>Préparation de votre retraite avec des stratégies d’épargne pour maintenir votre qualité de vie future.</p>
+        </div>
+  
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/market.webp" alt="Investissement en valeurs mobilières" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Valeur mobilière</h3>
+          <p>Investissement en valeurs mobilières pour diversifier votre portefeuille et maximiser vos rendements.</p>
+        </div>
+  
+        <div class="service-card" role="listitem">
+          <div class="service-icon">
+            <img src="/src/assets/icons/piggy-bank.webp" alt="Plan d'épargne salariale" loading="lazy"/>
+          </div>
+          <hr>
+          <h3>Épargne salariale</h3>
+          <p>Plans d’épargne adaptés aux salariés pour constituer un capital grâce à des dispositifs fiscaux avantageux.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <a href="/services" class="services-button" aria-label="Accéder à la page détaillée des services de BHB Conseil">Voir tous nos services</a>
     </div>
   </section>
 
