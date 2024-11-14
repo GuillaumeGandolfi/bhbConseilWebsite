@@ -1,0 +1,86 @@
+.about-section {
+  position: relative;
+  padding: 6rem 1rem;
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(rgba(1, 47, 60, 0.4), rgba(1, 47, 60, 0.4)),
+    url("/src/assets/images/home_about.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.about-values {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-values li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.about-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #012f3c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #011d29;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1rem;
+    background-attachment: scroll;
+  }
+
+  .about-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-values {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .about-button {
+    width: 100%;
+  }
+}

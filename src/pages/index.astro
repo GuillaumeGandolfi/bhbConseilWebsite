@@ -3,6 +3,7 @@ import BaseLayout from '../layout/BaseLayout.astro';
 
 import '../styles/homepage/hero.css';
 import '../styles/homepage/services.css';
+import '../styles/homepage/about.css';
 ---
 
 <BaseLayout>
@@ -105,5 +106,22 @@ import '../styles/homepage/services.css';
       <a href="/services" class="services-button" aria-label="Accéder à la page détaillée des services de BHB Conseil">Voir tous nos services</a>
     </div>
   </section>
+
+  <section class="about-section" aria-labelledby="about-title" role="region">
+    <div class="about-content">
+      <h2 id="about-title">À propos de BHB Conseil</h2>
+      <p>BHB Conseil est votre partenaire en gestion de patrimoine, dédié à offrir des solutions personnalisées et transparentes pour atteindre vos objectifs financiers.</p>
+      <ul class="about-values">
+        <li>Transparence</li>
+        <li>Réactivité</li>
+        <li>Compétence</li>
+        <li>Confidentialité</li>
+        <li>Performance</li>
+      </ul>
+      <a href="/a-propos" class="about-button" aria-label="En savoir plus sur BHB Conseil">En savoir plus</a>
+    </div>
+  </section>
+  
+  
 
 </BaseLayout>
