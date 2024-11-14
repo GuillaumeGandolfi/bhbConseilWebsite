@@ -1,0 +1,64 @@
+.partners-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.partners-section h2 {
+  font-size: 2rem;
+  color: #012f3c;
+  margin-bottom: 2rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* 5 colonnes pour une disposition équilibrée */
+  gap: 2rem; /* Espacement pour éviter que les logos soient trop proches */
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partner-card {
+  width: 120px; /* Largeur fixe pour chaque carte */
+  height: 80px; /* Hauteur fixe pour chaque carte */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.5rem; /* Ajoute un léger espace autour de chaque logo */
+}
+
+.partner-card:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.partner-card img {
+  max-width: 70%; /* Limite la taille du logo dans la carte */
+  max-height: 60%;
+  object-fit: contain; /* Conserve le ratio d'origine */
+}
+
+/* Carrousel en mode responsive */
+@media (max-width: 768px) {
+  .partners-grid {
+    display: flex; /* Utilise flex pour le défilement horizontal */
+    overflow-x: auto; /* Active le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Définit le carrousel pour "accrocher" chaque logo */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .partner-card {
+    min-width: 120px; /* Définit une largeur minimale pour chaque carte en mode carrousel */
+    scroll-snap-align: center; /* Centre chaque logo lorsqu'il est en vue */
+    flex: none; /* Assure que les logos ne se réduisent pas dans le carrousel */
+  }
+}
