@@ -38,9 +38,9 @@
 }
 
 .partner-card img {
-  max-width: 70%;
-  max-height: 60%;
-  object-fit: contain;
+  width: 100%; /* S'adapte à la largeur du conteneur */
+  height: auto; /* Maintient les proportions */
+  object-fit: contain; /* Assure un bon affichage même si les dimensions varient légèrement */
 }
 
 @media (max-width: 768px) {
