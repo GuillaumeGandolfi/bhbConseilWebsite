@@ -3,7 +3,7 @@ import BaseLayout from '../layout/BaseLayout.astro';
 
 import { Image } from 'astro:assets';
 
-import heroImage from '../assets/images/home_hero-2880.webp';
+import heroImage from '../assets/images/home_hero-1920.webp';
 
 import '../styles/homepage/hero.css';
 import '../styles/homepage/services.css';
@@ -19,9 +19,8 @@ import '../styles/homepage/contact.css';
       <Image
         src={heroImage}
         alt="Un visuel représentant la stratégie financière"
-        widths={[1920, 2880]}
-        sizes="(max-width: 1920px) 100vw, 1920px"
         format="webp"
+        loading="eager"
       />
     
     </div>
