@@ -14,7 +14,6 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .services-grid .first-row,
@@ -88,19 +87,19 @@
   .services-grid .second-row,
   .services-grid .third-row {
     display: grid;
-    grid-template-columns: 1fr; /* Une seule colonne par ligne */
-    gap: 1.5rem; /* Espacement entre les cartes */
-    justify-content: center; /* Centre les cartes */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-content: center;
   }
 
   .services-grid > div {
-    margin: 0 auto; /* Centre le conteneur global */
-    width: 100%; /* Assure une largeur complète */
-    max-width: 600px; /* Optionnel : pour limiter la largeur sur mobile */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
   }
 
   .service-card {
-    margin: 0 auto; /* Centre chaque carte dans son conteneur */
+    margin: 0 auto;
   }
 
   .services-cta {
