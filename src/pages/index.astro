@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro';
 
+import { Image } from 'astro:assets';
+import heroImage from '../assets/images/home_hero.webp';
+
 import '../styles/homepage/hero.css';
 import '../styles/homepage/services.css';
 import '../styles/homepage/about.css';
@@ -11,6 +14,16 @@ import '../styles/homepage/contact.css';
 <BaseLayout>
 
   <section class="hero-section" aria-labelledby="hero-title" role="region">
+    <div class="hero-image">
+      <Image
+        src={heroImage}
+        alt="Illustration représentant les services de BHB Conseil"
+        class="hero-image"
+        loading="eager"
+        decoding="async"
+      />
+    
+    </div>
     <div class="hero-content">
       <h1 id="hero-title">BHB Conseil, votre partenaire en stratégie financière</h1>
       <p>Un accompagnement complet en immobilier, prévoyance, retraite et bien plus</p>
@@ -20,6 +33,7 @@ import '../styles/homepage/contact.css';
       </div>
     </div>
   </section>
+  
 
   <section class="services-section" aria-labelledby="services-title" role="region">
     <h2 id="services-title">Nos Services</h2>
