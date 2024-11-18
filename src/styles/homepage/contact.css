@@ -1,0 +1,66 @@
+.cta-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(1, 47, 60, 0.4), rgba(1, 47, 60, 0.4)),
+    url("/src/assets/images/home_contact.webp");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.cta-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #012f3c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #011d29;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 3rem 1rem;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+  }
+}
