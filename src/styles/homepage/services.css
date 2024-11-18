@@ -88,13 +88,19 @@
   .services-grid .second-row,
   .services-grid .third-row {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 0 auto;
+    grid-template-columns: 1fr; /* Une seule colonne par ligne */
+    gap: 1.5rem; /* Espacement entre les cartes */
+    justify-content: center; /* Centre les cartes */
   }
 
   .services-grid > div {
-    margin: 0 auto;
+    margin: 0 auto; /* Centre le conteneur global */
+    width: 100%; /* Assure une largeur complète */
+    max-width: 600px; /* Optionnel : pour limiter la largeur sur mobile */
+  }
+
+  .service-card {
+    margin: 0 auto; /* Centre chaque carte dans son conteneur */
   }
 
   .services-cta {
