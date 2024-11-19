@@ -3,11 +3,22 @@
   padding: 6rem 1rem;
   color: #ffffff;
   text-align: center;
+  overflow: hidden; /* Empêche l'image de déborder */
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-image: linear-gradient(rgba(1, 47, 60, 0.4), rgba(1, 47, 60, 0.4)),
-    url("/src/assets/images/home_about.webp");
+    url("/src/assets/images/home_about-1920.webp"); /* Image par défaut */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Maintient l'effet parallaxe */
 }
 
 .about-content {
@@ -85,5 +96,25 @@
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about-section::before {
+    background-image: linear-gradient(
+        rgba(1, 47, 60, 0.4),
+        rgba(1, 47, 60, 0.4)
+      ),
+      url("/src/assets/images/home_about-1280.webp");
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section::before {
+    background-image: linear-gradient(
+        rgba(1, 47, 60, 0.4),
+        rgba(1, 47, 60, 0.4)
+      ),
+      url("/src/assets/images/home_about-640.webp");
   }
 }
