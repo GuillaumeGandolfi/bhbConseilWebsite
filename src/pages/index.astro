@@ -1,12 +1,5 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro';
-
-import { Image } from 'astro:assets';
-
-import heroImage640 from '../assets/images/home_hero-640.webp';
-import heroImage1280 from '../assets/images/home_hero-1280.webp';
-import heroImage1920 from '../assets/images/home_hero-1920.webp';
-
 import '../styles/homepage/hero.css';
 import '../styles/homepage/services.css';
 import '../styles/homepage/about.css';
@@ -19,11 +12,11 @@ import '../styles/homepage/contact.css';
   <section class="hero-section" aria-labelledby="hero-title" role="region">
     <div class="hero-image">
       <img 
-        src="/src/assets/images/home_hero-1920.webp" 
+        src="/assets/images/home_hero-1920.webp" 
         srcset="
-          /src/assets/images/home_hero-640.webp 640w,
-          /src/assets/images/home_hero-1280.webp 1280w,
-          /src/assets/images/home_hero-1920.webp 1920w
+          /assets/images/home_hero-640.webp 640w,
+          /assets/images/home_hero-1280.webp 1280w,
+          /assets/images/home_hero-1920.webp 1920w
         " 
         sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1440px"
         alt="Un visuel représentant la stratégie financière"
