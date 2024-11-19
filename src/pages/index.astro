@@ -3,7 +3,9 @@ import BaseLayout from '../layout/BaseLayout.astro';
 
 import { Image } from 'astro:assets';
 
-import heroImage from '../assets/images/home_hero-1920.webp';
+import heroImage640 from '../assets/images/home_hero-640.webp';
+import heroImage1280 from '../assets/images/home_hero-1280.webp';
+import heroImage1920 from '../assets/images/home_hero-1920.webp';
 
 import '../styles/homepage/hero.css';
 import '../styles/homepage/services.css';
@@ -16,13 +18,17 @@ import '../styles/homepage/contact.css';
 
   <section class="hero-section" aria-labelledby="hero-title" role="region">
     <div class="hero-image">
-      <Image
-        src={heroImage}
+      <img 
+        src="/src/assets/images/home_hero-1920.webp" 
+        srcset="
+          /src/assets/images/home_hero-640.webp 640w,
+          /src/assets/images/home_hero-1280.webp 1280w,
+          /src/assets/images/home_hero-1920.webp 1920w
+        " 
+        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1440px"
         alt="Un visuel représentant la stratégie financière"
-        format="webp"
         loading="eager"
       />
-    
     </div>
     <div class="hero-content">
       <h1 id="hero-title">BHB Conseil, votre partenaire en stratégie financière</h1>
