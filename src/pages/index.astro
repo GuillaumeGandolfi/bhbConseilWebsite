@@ -5,9 +5,13 @@ import '../styles/homepage/services.css';
 import '../styles/homepage/about.css';
 import '../styles/homepage/partners.css';
 import '../styles/homepage/contact.css';
+
+const pageTitle = "Accueil - BHB Conseil";
+const pageDescription = "Bienvenue sur le site de BHB Conseil, votre partenaire en stratégie financière et gestion de patrimoine.";
 ---
 
-<BaseLayout>
+
+<BaseLayout title={pageTitle} description={pageDescription}>
 
   <section class="hero-section" aria-labelledby="hero-title" role="region">
     <div class="hero-image">

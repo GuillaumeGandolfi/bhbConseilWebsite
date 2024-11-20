@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layout/BaseLayout.astro';
+
+import '../styles/aboutpage/hero.css';
+
+const pageTitle = "À propos - BHB Conseil";
+const pageDescription = "Découvrez BHB Conseil, notre histoire, nos valeurs, et notre équipe d'experts en gestion de patrimoine.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <section class="hero-section">
+    <img 
+      src="/assets/images/about_hero-1920.webp" 
+      srcset="
+        /assets/images/about_hero-640.webp 640w,
+        /assets/images/about_hero-1280.webp 1280w,
+        /assets/images/about_hero-1920.webp 1920w
+      " 
+      sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1440px"
+      alt="Une illustration représentant le conseil financier"
+      loading="eager"
+    />
+    <div class="hero-content">
+      <h1>BHB Conseil : Expertise, transparence et innovation au service de votre patrimoine</h1>
+      <p>Depuis sa création, BHB Conseil s'engage à accompagner ses clients dans toutes les étapes clés de la gestion de leur patrimoine, avec une expertise reconnue et des valeurs solides.</p>
+    </div>
+  </section>
+  
+  
+</BaseLayout>

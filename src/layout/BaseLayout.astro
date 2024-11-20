@@ -5,18 +5,19 @@ import Footer from '../components/Footer.astro';
 import '../styles/components/header.css';
 import '../styles/components/footer.css';
 import '../styles/global.css';
----
 
+const { title = "BHB Conseil - Votre partenaire en conseil financier", description = "Nom de l'entreprise offre des services de conseil et de placement financier pour vous accompagner dans la gestion de votre patrimoine." } = Astro.props;
+---
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nom de l'entreprise - Votre partenaire en conseil financier</title>
+    <title>{title}</title>
     
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-    <meta name="description" content="Nom de l'entreprise offre des services de conseil et de placement financier pour vous accompagner dans la gestion de votre patrimoine.">
+    <meta name="description" content={description} />
 
     <link rel="icon" href="/assets/favicon/favicon.ico" />
   </head>
